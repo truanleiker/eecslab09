@@ -1,0 +1,48 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <title>Web Store</title>
+        <link rel="stylesheet" type="text/css" href="style.css"></link>
+        <script type="text/javascript" src="formChecker.js"></script>
+    </head>
+    <body>
+        <form id="formHello" action="customerBackend.php" method="post" onsubmit="return verify()">
+            
+            Username: <input type="email" id="userName" name="username" required><br>
+            Password: <input type="password" id="passWord" name="password" required><br>
+        
+            <h3>Single Peanut M&M ($0.03)</h3>
+            Quantity:
+            <input type="text" id="quantityPeanut" name="quantitypeanut" required><br>
+
+            <br>
+
+            <h3>1.23 Tons of Feathers ($15,000.00)</h3>
+            Quantity:
+            <input type="text" id="quantityFeather" name="quantityfeather" required><br>
+
+            <br>
+
+            <h3>Large Adult Human Heart ($130,000.00)</h3>
+            Quantity:
+            <input type="text" id="quantityHeart" name="quantityheart" required><br>
+
+            <br>
+
+            <h4>Shipping</h4>
+            <input type="radio" id="free" name="shipping" value="free">
+            <label for="free">Free 7 day</label><br>
+            <input type="radio" id="overnight" name="shipping" value="overnight">
+            <label for="overnight">$50.00 over night</label><br>
+            <input type="radio" id="three" name="shipping" value="three">
+            <label for="three">$5.00 three day</label><br>
+
+            <br>
+
+            <div id="messages"></div>
+
+            <button type="reset" onclick="reset()">Reset</button>
+            <input type="submit">
+        </form>
+    </body>
+</html>
